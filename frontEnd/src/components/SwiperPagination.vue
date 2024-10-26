@@ -1,5 +1,5 @@
 <template>
-    <swiper :pagination="true" :modules="[Pagination]" class="mySwiper">
+    <swiper :pagination="true" :autoplay="{ delay: 3000 }" :modules="[Pagination, Autoplay]" class="mySwiper">
         <swiper-slide v-for="(image, index) in images" :key="index">
             <img :src="image" :alt="`Slide ${index + 1}`" />
         </swiper-slide>
@@ -8,11 +8,11 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay  } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay'
 
-// Recebe a lista de imagens como prop
 defineProps({
     images: {
         type: Array,

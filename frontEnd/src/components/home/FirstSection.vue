@@ -19,9 +19,9 @@
 import SwiperPagination from '../../components/SwiperPagination.vue'
 
 const images = [
-    'images/image-slide-1.jpg',
-    'images/image-slide-1.jpg',
-    'images/image-slide-1.jpg',
+    'images/firstSection/image-slide-1.jpg',
+    'images/firstSection/image-slide-2.jpg',
+    'images/firstSection/image-slide-3.jpg',
 ];
 </script>
 
@@ -31,7 +31,7 @@ const images = [
 }
 
 .text-content {
-    @apply row-span-1 px-60 flex flex-col justify-center items-end rounded-lg gap-2 max-h-96 bg-cyan-600;
+    @apply row-span-1 px-60 flex flex-col justify-center items-end rounded-lg gap-2 max-h-96 bg-cyan-400;
 }
 
 .image-content {
@@ -44,7 +44,7 @@ const images = [
 
 .highlighted-image {
     @apply col-span-1 bg-cover bg-center rounded-lg;
-    background-image: url(/images/image-01.jpg);
+    background-image: url(/images/firstSection/image-01.jpg);
 }
 
 .pagination {
